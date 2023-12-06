@@ -60,7 +60,7 @@ async function seedInvoices(client) {
     date DATE NOT NULL
   );
 `;
-
+    /*  */
     console.log(`Created "invoices" table`);
 
     // Insert data into the "invoices" table
