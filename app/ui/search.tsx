@@ -1,6 +1,7 @@
 //  Это клиентский компонент, что означает, что вы можете использовать прослушиватели событий и перехватчики.
 'use client';
 import { useDebouncedCallback } from 'use-debounce';
+
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 
