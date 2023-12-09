@@ -1,6 +1,7 @@
 import '@/app/ui/global.css';
 import { Metadata } from 'next';
 import { inter } from '@/app/ui/fonts';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: {
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: {children: React.ReactNode;}) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>{children}<SpeedInsights /></body>
     </html>
   );
 }
